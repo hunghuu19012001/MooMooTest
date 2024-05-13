@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container ">
+            <div class="logo">
+                <img src="image/logotest.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="main_list" id="mainListDiv">
+                    <ul>
+                        <li> <a href="#">SINGAPORE</a> </li>
+                        <li> <a href="#">BUY</a> </li>
+                        <li> <a href="#">UK</a> </li>
+                        <li> <a href="#">PORTFOLIO PLANNING</a> </li>
+                        <li> <a href="#">ABOUT US</a> </li>
+                        <li> <a href="#">WATCH</a> </li>
+                        <li> <a href="#">OUR PARTNERS</a> </li>
+                        <li> <a href="#">JOIN US</a> </li>
+                        <li> <a href="#">CONTACT</a> </li>
+
+                    </ul>
+                </div>
+                <div class="media_button">
+                    <i class="fas fa-bars" id="mediaButton"></i>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <script type="text/javascript">
+        var mainListDiv = document.getElementById("mainListDiv");
+        var mediaButton = document.getElementById('mediaButton');
+
+        mediaButton.onclick = function(event) {
+            event.stopPropagation();
+            mainListDiv.classList.toggle('show_list');
+            mediaButton.classList.toggle('active');
+        }
+
+        document.addEventListener("click", function(event) {
+            var isClickInsideMediaButton = mediaButton.contains(event.target);
+            var isClickInsideMainList = mainListDiv.contains(event.target);
+
+            if (!isClickInsideMediaButton && !isClickInsideMainList) {
+                mainListDiv.classList.remove('show_list');
+                mediaButton.classList.remove('active');
+            }
+        });
+    </script>
+
+    <section class="home">
+        <div class="content ">
+            <div class="left">
+
+                <h5>OWN A PIECE OF PARADISE</h5>
+                <h2>Explore Lucrative Investment Opportunities In Bali</h2>
+                <p> Nestled amidst breathtaking landscapes and vibrant culture, Bali offers you a unique opportunity to invest in a flourishing real estate market. Renowned for its natural beauty and strong tourism sector. Bati is the perfect environment
+                    for investment growth and diversification.</p>
+
+            </div>
+
+            <div class="right">
+                <img src="./image/shutterstock_1819110149 2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="introduce">
+
+        <div class="intro-title">
+            <h1>Invest In One Of The World's Top Tourist Destinations</h1>
+            <p>" in Bal 7 StM Ii, you're not just acquiring a piece of paradise, you're positioning yourself to benefit from the island's* thriving v f and ever-groWing tourism industry. Some of the key drivers facilitating Bali' s real estate success include:</p>
+        </div>
+        <div class="intro-content">
+
+            <div class="backgr-color">
+                <h3>A Tourist Paradise with Unmatched Appeal</h3>
+                <p>Ranked among the top 20 most visited cities in 2023, Bali boasts diverse tourism offerings, including wellness retreats, adventure sports like surfing and diving, cultural tours, shopping, and vibrant nightlife.</p>
+            </div>
+            <div class="backgr-color">
+                <h3>A Booming Tourism Industry</h3>
+                <p>While the tourist population hasn't yet reached pre-pandemic levels, It is still experiencing rapid growth — indicating promising potential for growth in the coming years.</p>
+            </div>
+            <div class="backgr-color">
+                <h3>Government Investment in Infrastructure</h3>
+                <p>The Bali government is developing plans to enhance transport infrastructure, which will further facilitate tourism and investment opportunities on the island.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="dis-return">
+        <div class="dis-return-title">
+            <h1>Achieve High Returns With Your Property In Bali</h1>
+            <p>Beyond its tourism strength, Bali holds more financial advantages that benefit you as an investor. These include:</p>
+        </div>
+        <div class="dis-return-content">
+            <div class="dis-return-content-1">
+                <div class="disbg">
+                    <div class="disbg-img">
+                        <img src="./image/disreturn/Rectangle 621.png" alt="">
+                    </div>
+                    <div class="disbg-content">
+                        <h4>Bali's Currency Advantage:</h4>
+                        <h2>Bali's thriving tourism industry is heavily reliant on the US Dollar (USD).</h2>
+                    </div>
+                </div>
+                <div class="dis-bot">
+                    <div class="dis-bot-img">
+                        <img src="./image/disreturn/subscription-cashflow.png" alt="">
+                    </div>
+                    <div>
+                        <h4>This strong currency connection provides stability for your investment,</h4>
+                        <h1>Minimising Foreign Exchange Fluctuations.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="dis-return-mid">
+                <div class="dismid-title">
+                    <h3>Lucrative Returns</h3>
+                    <h1>15%</h1>
+                    <h2>And Above <br> Yearly ROI</h2>
+                </div>
+                <div class="dismid">
+                    <img src="./image/disreturn/image 65.png" alt="">
+                    <div class="dismid-last">
+                        <p>Our Successfull Investors</p>
+
+                    </div>
+                    <div class="dismid-last-ic">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dis-return-content-1">
+                <div class="disbg">
+                    <div class="disbg-img">
+                        <img src="./image/disreturn/Rectangle 6211.png" alt="">
+                    </div>
+
+                    <div class="disbg-content">
+                        <h4>Investors in Bali's Tourism Sector <br>Can Expect</h4>
+                        <h2>A Yearly Return On Investment Of 15% Or More.</h2>
+                    </div>
+                </div>
+                <div class="disbg">
+                    <div class="disbg-img">
+                        <img src="./image/disreturn/Rectangle 629.png" alt="">
+                    </div>
+                    <div class="disbg-last">
+                        <h4>This Creates Significant Long-Term Gains, Allowing Investors To </h4>
+                        <h1>Quadruple Their <br> Capital In <br>25 Years. </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recommen">
+        <div class="recommen-title">
+            <h1>Get Top-Tier Bali Properties At Unbeatable Rates</h1>
+            <h3>Using Our Unique Pod Based Strategy</h3>
+            <p>Unlike traditional real estate investing, our "pod-based approach" works like a dolphin hunting pod. With a large network of investors, we combine resources and negotiate unbeatable rates on some of the best developments in Bali. This "pod-based
+                buying" gives us:</p>
+        </div>
+        <div class="recommen-content">
+            <div class="recommen-content1">
+                <img src="./image/recommen/1.png" alt="">
+                <img src="./image/recommen/Mask group.png" alt="">
+                <div class="recommen-content-des">
+                    <h3>Pre-Bulk:</h3>
+                    <p><span>Bulk buying, big savings</span>. With our combined buying power, we are able to purchase in large volumes at incredible rates.</p>
+                </div>
+            </div>
+            <div class="recommen-content1">
+                <img src="./image/recommen/Mask group (1).png" alt="">
+                <img src="./image/recommen/Mask group (2).png" alt="">
+                <div class="recommen-content-des">
+                    <h3>Pre-Select:</h3>
+                    <p>Working as a pod, we are able to <span>hand-pick the best units</span> within a project, prioritising layouts optimised for maximum investment potential.</p>
+                </div>
+            </div>
+            <div class="recommen-content1">
+                <img src="./image/recommen/3.png" alt="">
+                <img src="./image/recommen/Mask group (3).png" alt="">
+                <div class="recommen-content-des">
+                    <h3>Pre access:</h3>
+                    <p>Access new launches before they hit the market. We secure <span>exclusive access to-pre-releases</span> including hidden phases and early floor selections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div id="logo"><img src="./image/cb-logo 1.png" alt=""></div>
+                <h2>Want To Collaborate With Us?</h2>
+                <p>Tell us a bit about what you have in mind and we'll get in touch with you at the soonest.</p>
+            </div>
+            <div class="form">
+
+                <form action="/submit" method="post">
+
+                    <input type="text" placeholder="Name:" name="name" required>
+
+
+                    <input type="email" placeholder="Email:" name="email" required>
+
+
+                    <input type="tel" placeholder="Contact:" name="contact" required>
+                    <input type="text" placeholder="Send:" name="name" required>
+                    <div class="checkbox">
+                        <div><input type="checkbox" id="checkbox" name="subscribe"></div>
+                        <div> <label for="subscribe">Assist you from A to Z. We'll bring out your property's true value through strategic staging and professional video production.</label></div>
+                    </div>
+
+                    <button type="submit" id="button">SEND</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
